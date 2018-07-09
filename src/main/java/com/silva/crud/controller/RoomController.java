@@ -20,4 +20,9 @@ public class RoomController {
 	public List<Room> getAll(){
 		return roomRepository.findAll();
 	}
+	
+	@RequestMapping(method = RequestMethod.GET, path="/state")
+	public String sayHello(){
+		return "Say Hello World";
+	}
 }
